@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: order-service
+  profiles:
+    active: @profile.name@
+
+    #   开启负载均衡策略~~
+    loadbalancer:
+      nacos:
+        enabled: true
+
+
+
+mybatis:
+  configuration: # ???? MyBatis??
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #????????

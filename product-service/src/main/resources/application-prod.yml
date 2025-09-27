@@ -1,0 +1,21 @@
+
+
+
+spring:
+# 云数据库的密码
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cloud_product?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# 服务器的nacos地址
+  cloud:
+    nacos:
+      discovery:
+#        云服务器的nacos
+        server-addr: 10.219.46.208:8848
+
+mybatis:
+  configuration: # ???? MyBatis??
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #????????

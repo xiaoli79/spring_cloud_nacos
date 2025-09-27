@@ -1,0 +1,16 @@
+
+#本地的数据库的密码
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cloud_order?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# 本地的nacos地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.219.47.26:8848
+#        根据自己的nacos设置
+#        cluster-name: BJ
+#        namespace: 6d6d3842-3012-4aa3-b422-6950d47dfa1b

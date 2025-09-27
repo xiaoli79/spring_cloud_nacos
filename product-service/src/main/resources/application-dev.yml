@@ -1,0 +1,23 @@
+
+spring:
+  datasource:
+#   本地的数据库
+    url: jdbc:mysql://127.0.0.1:3306/cloud_product?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#本地的nacos地址
+  cloud:
+    nacos:
+      discovery:
+#      本地的nacos路径
+        server-addr: 10.219.47.26:8848
+#        cluster-name: BJ
+#        namespace: 6d6d3842-3012-4aa3-b422-6950d47dfa1b
+
+mybatis:
+  configuration: # ???? MyBatis??
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #????????
+
+
